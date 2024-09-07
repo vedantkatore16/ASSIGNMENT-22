@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"
+    href="./../css/profile.css">
+    <link rel="icon" href="../img/trolley.png" type="image/png" />
+    <title>Profile</title>
+    <style>
+        .text-center{
+    text-align: center;
+}
+.profile-form{
+    margin: 40px;
+    color:black;
+    font-size: 20px;
+    text-align: center;
+
+    
+}
+.profile-form2{
+    color:black;
+    margin: auto;
+    padding: 10px;
+}
+.btn{
+    background-color:white;
+    margin: 0 30px;
+    padding: 10px 30px;
+    width: 180px;
+    height: 40px;
+    border-radius: 40px;
+    cursor:pointer;
+    border: solid 2px black; 
+    color:black;
+    font-size: 15px;
+}
+.btn:hover{
+    transition: 0.3s;
+    color:white;
+    background-color: black;
+
+}
+.profile-img{
+    height: 40px;
+    width: 30px;
+    margin-top: 40px;
+    cursor: pointer;
+
+}
+.next-btn{
+    height: 40px;
+    width: 200px;
+
+}
+.btn{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    
+}
+    </style>
+</head>
+<body>
+    <a href="./../index.html"><button class="btn">Home Page</button></a>
+  <div class=" text-center">
+    <h1 class="text-center"> Update Profile</h1>
+    <hr/>
+    <form class="profile-form">
+        <input type="text" placeholder="Full Name*"  class="profile-form2 "/><br/><br/>
+        <input type="text" placeholder="Phone Number*"  class="profile-form2 " /><br/><br/>
+        <input type="text" placeholder="Email-Id*" class="profile-form2 "  /><br/><br/>
+        <input type="text" placeholder=" Pin code* " class="profile-form2 " /><br/><br/>
+        <input type="text" placeholder=" City*" class="profile-form2"/><br/>
+        <label for="selectGender" class="profile-form2"></label> <br />
+      <select id="selectGender" class="profile-form2 next-btn">
+        <option>Gender*</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select><br/>
+
+        <label for="selectstate" class="profile-form2"></label> <br />
+      <select id="selectlanguage" class="profile-form2 next-btn"><br/><br/>
+        <option>Languages Spoken*</option>
+        <option>Hindi</option>
+        <option>English</option>
+        <option>Tamil</option>
+        <option>Telugu</option>
+        <option>Marathi</option>
+        <option>Kannada</option>
+      </select><br/>
+        <label for="selectstate" class="profile-form2"></label> <br />
+      <select id="selectstate" class="profile-form2 next-btn"><br/>
+        <option>Choose State*</option>
+        <option>Andhra Pradesh</option>
+        <option>Bihar</option>
+        <option>Chandigarh</option>
+        <option>Delhi</option>
+        <option>Goa</option>
+        <option>Gujarat</option>
+        <option>Harayana</option>
+        <option>Himachal Pradesh</option>
+        <option>Jammu&Kashmir</option>
+        <option>Karnataka</option>
+        <option>Ladakh</option>
+        <option>Madhya Pradesh</option>
+        <option>Maharashtra</option>
+        <option>Manipur</option>
+        <option>Ngaland</option>
+        <option>Odisha</option>
+        <option>Rajasthan</option>
+        <option>Sikkim</option>
+        <option>Uttar Pradesh</option>
+        <option>Others</option>
+      </select><br/><br/><br/>
+
+      <input type="submit" value="Logout Your Profile" class=" btn" />
+        <input type="submit" value="Save" class=" btn" />
+      </form>
+      </form>
+  
+</body>
+</html>

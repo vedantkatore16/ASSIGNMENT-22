@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icons" href="./img/shop.png">
+    <title>Fruit Mart..</title>
+    <style>
+        body{
+            background-color: #fffffe;
+        }
+         .fix-header {
+            border-bottom: 1px solid black;
+            position: sticky;
+            left: 0px;
+            top: 0px;
+            background-color: white;
+        }
+
+        .parent {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            align-self: center;
+            cursor: pointer;
+            position: sticky;
+            left: 0px;
+            top: 0px;
+            background-color: white;
+        }
+
+        .heading {
+            font-size: 50px;
+            font-family: none;
+            margin-right: 150px;
+
+        }
+
+        .search-bar {
+            border: none;
+            width: 400px;
+            border-bottom: 1px solid black;
+            text-align: center;
+            margin-right: 200px;
+        }
+
+        .search-bar:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+
+        }
+
+
+        .icons {
+            justify-content: end;
+            border: 1px solid white;
+            padding: 8px;
+            cursor: pointer;
+
+        }
+
+        .icons:hover {
+            transform: scale(1.2);
+            transition: 0.5s;
+
+        }
+
+        .logins {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .head {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            text-align: center;
+            position: sticky;
+            left: 0;
+            top: 100px;
+            background-color: white;
+
+            padding: 20px;
+
+        }
+
+        .text {
+            text-decoration: none;
+            cursor: pointer;
+            color: black;
+
+        }
+        .img-head{
+              margin: 20px;
+              width: 100%;
+               height: 600px;
+               margin-bottom: 15px;
+               
+        }
+        .wishlist-icon {
+    height: 210px;
+    display: block;
+    margin: 5px auto;
+    margin-top: -1px;
+    align-items: center;
+    
+    
+ 
+
+}
+
+.shopping-card-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.shopping-card-title {
+
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+
+.shopping-card-ratings {
+    height: 15px;
+    width: 70px;
+    display: block;
+    margin: 0px auto;
+}
+
+.descrip {
+     margin-left: 10px;
+    margin-top: 10px;
+ }
+.shopping-card-descrip {
+    margin-left: 10px;
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+.shopping-card-btn {
+    background-color:white;
+    color: black;
+    margin: 7px 10px;
+    padding: 5px 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 40px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.shopping-card-btn:hover{
+    background-color:black;
+    color: #fff;
+    border: 1px solid black;
+}
+.card-parent{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    flex-direction:row;
+    margin:100px ;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+
+}
+.shopping-card-container {
+    height: 370px;
+    width: 255px;
+    padding: 12px;
+    margin: 90px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px 2px #b7b7b8;
+    cursor: pointer;
+}
+
+.shopping-card-container:hover{
+    box-shadow: 0px 0px 20px 2px gray;
+}
+.shopping-items {
+    height: 180px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.sub-head{
+    text-align: center;
+    font-family: serif;
+    font-size: xxx-large;
+    margin-bottom: 5px;
+}
+.service-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 20px;
+   
+  }
+  .service-img{
+    height: 60px;
+    display: block;
+    margin: 10px auto;
+  }
+  .service-card{
+    background-color: white;
+    width: 180px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px #475d5b;
+  }
+  .service{
+    margin-top: 30px;
+  }
+  .text-center{
+    text-align: center;
+    margin: 20px 10px;
+}
+
+        
+    </style>
+</head>
+<body>
+  
+
+   <a href="./pages/freshfruit.html"></a>
+
+    <div class="fix-header">
+        <div class="parent">
+            <div class="upper-side">
+                <span class="heading"><b>Fruit Mart...</b> </span>
+                <input class="search-bar" type="text" placeholder="search for products" />
+            </div>
+            <div class="logins">
+                <img src="./img/shopping-cart.png" height="40px" class="icons" />
+                <b>Cart</b>
+            </div>
+            <div class="logins">
+                <img src="./img/e-commerce.png" height="40px" class="icons" />
+                <b>Wishlist</b>
+            </div>
+            
+            <div class="logins">
+                <a href="./pages/profile.html"><img src="./img/user.png" height="40px" class="icons" /></a>
+                <b>Profile</b>
+            </div>
+
+        </div>
+        <hr />
+        <div class="head">
+            <a href="./index.html" class="text"><b>Home</b></a>
+            <a href="./pages/freshfruit.html" class="text"><b>Fresh Fruits</b></a>
+            <a href="./pages/immunity.html" class="text"><b>Immunity Booster</b></a>
+            <a href="./pages/dryfruits.html" class="text"><b>Dry Fruits</b></a>
+        </div>
+
+
+    </div>
+
+
+      
+    <div>
+        <img src="https://www.spotlessfruits.com/cdn/shop/files/Fruit_Basket_-_Spotless_Fruits_India_BN_1920x750.png?v=1630129198" class="img-head" alt="error">
+    </div>
+    
+    <h1  class="sub-head"><b>PREMINUM IMPORTED FRUIT'S</b></h1>
+
+    <div class="card-parent">
+    
+        <div class="shopping-card-container">
+            <div class="shopping-items img-1">
+                <img src="https://www.spotlessfruits.com/cdn/shop/products/SpotlessFruitsIndia-Mulberry_1024x1024@2x.png?v=1621839039" class="wishlist-icon">
+            </div>
+            <p class="shopping-card-price"> <b><del> Price:-200/-</del>  Price:-150/-</b> </p>
+            <p class="shopping-card-title">Mulberry</p>
+            <p class="shopping-card-ratings">★★★★★(4)</p>
+            <p class="shopping-card-descrip"></p>
+            <button class="shopping-card-btn">Add to cart</button>
+            <button class="shopping-card-btn">Buy now</button>
+        </div>
+
+        <div class="shopping-card-container">
+            <div class="shopping-items img-1">
+                <img src="https://www.spotlessfruits.com/cdn/shop/files/PinkGuava-SpotlessFruitsIndia_370x370.png?v=1723350424" class="wishlist-icon">
+            </div>
+            <p class="shopping-card-price"> <b><del> Price:-250/-</del>  Price:-120/-</b> </p>
+            <p class="shopping-card-title">Pink Guava</p>
+            <p class="shopping-card-ratings">★★★★★(4)</p>
+            <p class="shopping-card-descrip"></p>
+            <button class="shopping-card-btn">Add to cart</button>
+            <button class="shopping-card-btn">Buy now</button>
+        </div>
+
+        <div class="shopping-card-container">
+            <div class="shopping-items img-1">
+                <img src="https://www.spotlessfruits.com/cdn/shop/files/LONGAN-SPOTLESSFRUITSINDA_370x370.png?v=1723277879" class="wishlist-icon">
+            </div>
+            <p class="shopping-card-price"> <b><del> Price:-400/-</del>  Price:-200/-</b> </p>
+            <p class="shopping-card-title">Longaon</p>
+            <p class="shopping-card-ratings">★★★★★(4)</p>
+            <p class="shopping-card-descrip"></p>
+            <button class="shopping-card-btn">Add to cart</button>
+            <button class="shopping-card-btn">Buy now</button>
+        </div>
+
+        <div class="shopping-card-container">
+            <div class="shopping-items img-1">
+                <img src="https://www.spotlessfruits.com/cdn/shop/products/CRANBERRY-SPOTLESSFRUITSINDIA_370x370.png?v=1634187254" class="wishlist-icon">
+            </div>
+            <p class="shopping-card-price"> <b><del> Price:-1000/-</del>  Price:-500/-</b> </p>
+            <p class="shopping-card-title">Fresh Cran Berry</p>
+            <p class="shopping-card-ratings">★★★★★(4)</p>
+            <p class="shopping-card-descrip"></p>
+            <button class="shopping-card-btn">Add to cart</button>
+            <button class="shopping-card-btn">Buy now</button>
+        </div>
+
+        <div class="shopping-card-container">
+            <div class="shopping-items img-1">
+                <img src="https://www.spotlessfruits.com/cdn/shop/products/SpotlessFruitsIndia-Raspberry_370x370.png?v=1621838617" class="wishlist-icon">
+            </div>
+            <p class="shopping-card-price"> <b><del> Price:-2000/-</del>  Price:-1200/-</b> </p>
+            <p class="shopping-card-title">Rasberry</p>
+            <p class="shopping-card-ratings">★★★★★(4)</p>
+            <p class="shopping-card-descrip"></p>
+            <button class="shopping-card-btn">Add to cart</button>
+            <button class="shopping-card-btn">Buy now</button>
+        </div>
+
+        <div class="shopping-card-container">
+            <div class="shopping-items img-1">
+                <img src="https://www.spotlessfruits.com/cdn/shop/files/Rambutan-SpotlessFruitsIndia_370x370.png?v=1723350308" class="wishlist-icon">
+            </div>
+            <p class="shopping-card-price"> <b><del> Price:-1500/-</del>  Price:-1200/-</b> </p>
+            <p class="shopping-card-title">Rambutan - Imported</p>
+            <p class="shopping-card-ratings">★★★★★(4)</p>
+            <p class="shopping-card-descrip"></p>
+            <button class="shopping-card-btn">Add to cart</button>
+            <button class="shopping-card-btn">Buy now</button>
+        </div>
+
+        <div class="shopping-card-container">
+            <div class="shopping-items img-1">
+                <img src="https://www.spotlessfruits.com/cdn/shop/products/FreshBlueberry-SpotlessFruitsIndia_370x370.png?v=1624076971" class="wishlist-icon">
+            </div>
+            <p class="shopping-card-price"> <b><del> Price:-900/-</del>  Price:-320/-</b> </p>
+            <p class="shopping-card-title">Blue-Berry</p>
+            <p class="shopping-card-ratings">★★★★★(4)</p>
+            <p class="shopping-card-descrip"></p>
+            <button class="shopping-card-btn">Add to cart</button>
+            <button class="shopping-card-btn">Buy now</button>
+        </div>
+
+        <div class="shopping-card-container">
+            <div class="shopping-items img-1">
+                <img src="https://www.spotlessfruits.com/cdn/shop/products/FRESHMIXEDBERRIES-SPOTLESSFRUITSINDIA_370x370.png?v=1633147928" class="wishlist-icon">
+            </div>
+            <p class="shopping-card-price"> <b><del> Price:-900/-</del>  Price:-600/-</b> </p>
+            <p class="shopping-card-title">Mixed -Berry</p>
+            <p class="shopping-card-ratings">★★★★★(4)</p>
+            <p class="shopping-card-descrip"></p>
+            <button class="shopping-card-btn">Add to cart</button>
+            <button class="shopping-card-btn">Buy now</button>
+        </div>
+    </div>
+
+
+    <h2 class="text-center service text-dark font-fam">TOP SERVICES...</h2>
+
+    <div class="service-container">
+    <div class="service-card">
+        <img src="./img/fruit.png" class="service-img">
+        <h3 class="text-center">Fresh Fruits</h3>
+        <p class="text-center font-fam">
+            quality  of fruits are to good and healthy.
+        </p>
+
+    </div>
+    <div class="service-card">
+        <img src="./img/24-hours.png" class="service-img">
+        <h3 class="text-center">24/7</h3>
+        <p class="text-center font-fam">
+           24/7  delivery is avaliable.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <img src="./img/free-shipping.png" class="service-img">
+        <h3 class="text-center">Free Shipping</h3>
+        <p class="text-center font-fam">
+            Free shipping.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <img src="./img/affordable.png" class="service-img">
+        <h3 class="text-center">Affordable Price</h3>
+        <p class="text-center font-fam">
+            We can provide less cost product with top quality.
+        </p>
+    </div>
+
+    <div class="service-card">
+            <img src="./img/limited-offer.png" class="service-img">
+            <h3 class="text-center">Limited Offer</h3>
+            <p class="text-center font-fam ">
+             Limited offer hurry up!!
+            </p>
+    </div>
+
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
